@@ -6,9 +6,9 @@ plugins {
 }
 
 group = "de.miraculixx"
-version = "1.0.0"
+version = "1.0.1"
 
-val githubRepo = "MUtils-MC/MChallenge-API"
+val githubRepo = "MUtils-MC/MiniMessage-Convertor"
 val isSnapshot = false
 
 repositories {
@@ -59,7 +59,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "de.miraculixx"
             artifactId = "minimessage-convertor"
-            version = "1.0.0"
+            version = "1.0.1"
 
             from(components["java"])
 

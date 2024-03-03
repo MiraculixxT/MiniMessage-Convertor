@@ -18,7 +18,6 @@ object MiniMessageConvertor {
     fun rawColor(input: String, type: ConverterType, functionInfo: FunctionInfo? = null): String {
         val component = mm.deserialize(input)
         val string = mmGson.serialize(component)
-        println(string)
         val textObj = try {
             Json.decodeFromString<TextStyling>(string)
         } catch (_: Exception) {
